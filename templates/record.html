@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <h1 class="heading">Records</h1>
+
+
+
+
+        <table>
+{% for item in records %}
+<tr>
+   <td>{{item.date}}</td>
+   <td>{{item.mileage}}</td>
+   <td>{{item.service}}</td>
+   <td>{{item.description}}</td>
+
+
+   <td>{{item.cost}}</td>
+
+   <td>{{item.performed}}</td>
+   <td>{{item.product}}</td>
+
+</tr>
+{% endfor %}
+</table>
+
+
+  </section>
+{% endblock %}

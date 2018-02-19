@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="dark clearfix">
+    <article class="vehicle">
+        <i class="fas fa-cog"></i>
+        <h1> Home</h1>
+        <a href="{{ url_for('vehicle') }}">vehicle</a>
+        {{vehicle.year}}
+    </article>
+    <article class="container">
+        <a href="{{ url_for('record') }}"><i class="fas fa-tachometer-alt fa-4x"></i></a>
+        <a href="#">record</a>
+    </article>
+    <article class="container">
+        <i class="fas fa-plus fa-4x"></i>
+        <a href="{{ url_for('add') }}">add</a>
+    </article>
+    <article class="container">
+        <i class="far fa-calendar-alt fa-4x"></i>
+        <a href="{{ url_for('record') }}">record</a>
+    </article>
+    <article class="container">
+        <i class="fas fa-wrench fa-4x"></i>
+        <a href="{{ url_for('add') }}">add</a>
+    </article>
+
+</section>
+
+{% endblock %}

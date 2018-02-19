@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <h1 class="heading">Add Entry</h1>
+
+            <form method="POST">
+            {{ form.csrf_token }}
+            {{ form.date.label }} {{ form.date }}
+            {{ form.mileage.label }} {{ form.mileage }}
+            {{ form.service.label }} {{ form.service }}
+            {{ form.description.label }} {{ form.description }}
+            {{ form.cost.label }} {{ form.cost }}
+            {{ form.performed.label }} {{ form.performed }}
+            <input type="submit" value="Go" id="add_button">
+            </form>
+          
+{% endblock %}

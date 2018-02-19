@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="heading">Car</h1>
+
+            <form method="POST">
+            {{ form.csrf_token }}
+            {{ form.year.label }} {{ form.year }}
+            {{ form.make.label }} {{ form.make }}
+            {{ form.model.label }} {{ form.model }}
+            {{ form.mileage.label }} {{ form.mileage }}
+            {{ form.vin.label }} {{ form.vin }}
+            {{ form.license.label }} {{ form.license }}
+            <input type="submit" value="Go" id="add_button">
+            </form>
+          
+{% endblock %}

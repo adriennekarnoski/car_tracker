@@ -1,0 +1,38 @@
+
+main {
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+}
+
+svg {
+    display: block;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    display: inline-block;
+    text-align: center;
+    height: 33vh;
+    width: 50%;
+    float: left;
+}
+
+.container a {
+    display: block;
+    padding: 10%;
+}
+.vehicle {
+    height: 33vh;
+}
+
+.dark {
+    background: #17252a;
+    color: white;
+}
