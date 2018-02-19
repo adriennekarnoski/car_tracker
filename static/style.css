@@ -3,13 +3,6 @@ main {
     height: 100vh;
 }
 
-section {
-    width: 100%;
-}
-
-svg {
-    display: block;
-}
 .clearfix {
     content: "";
     display: table;
@@ -24,15 +17,59 @@ svg {
     float: left;
 }
 
-.container a {
+.icon_link {
     display: block;
     padding: 10%;
+    color: #feffff;
 }
+
+.icon_link:hover {
+    color: #2b7a78;
+}
+
+.name_link {
+    display: block;
+    padding:  0% 10%;
+    text-decoration: none;
+    color: #17252a;
+}
+
 .vehicle {
-    height: 33vh;
+    height: 23vh;
+    width: 100%;
+}
+
+.vehicle section {
+    width: 50%;
+}
+
+.vehicle_edit {
+    float: right;
+    padding: 5%;
+    color: #17252a;
+}
+
+.vehicle_description {
+    text-align: right;
+    padding-right: 5%;
+    color: #2b7a78;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    padding-bottom: 3%;
 }
 
 .dark {
-    background: #17252a;
+    background: #3aafa9;
     color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }

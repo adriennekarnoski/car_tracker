@@ -3,27 +3,41 @@
 
 {% block content %}
 <section class="dark clearfix">
-    <article class="vehicle">
-        <i class="fas fa-cog"></i>
-        <h1> Home</h1>
-        <a href="{{ url_for('vehicle') }}">vehicle</a>
-        {{vehicle.year}}
+        <a href="{{ url_for('vehicle') }}" class="vehicle_edit"><i class="fas fa-cog fa-2x"></i></a>
+    <article class="vehicle clearfix">
+        <h1 class="heading">Home</h1>
+        <section class="left">
+            <ul class="right vehicle_description">
+                <li>{{vehicle.year}}</li>
+                <li>{{vehicle.make}}</li>
+                <li>{{vehicle.model}}</li>
+                <li>{{vehicle.mileage}}</li>
+            </ul>
+        </section>
+        <section class="right">
+            <ul class="left">
+                <li>{{vehicle.year}}</li>
+                <li>{{vehicle.make}}</li>
+                <li>{{vehicle.model}}</li>
+                <li>{{vehicle.mileage}}</li>
+            </ul>
+        </section>
     </article>
     <article class="container">
-        <a href="{{ url_for('record') }}"><i class="fas fa-tachometer-alt fa-4x"></i></a>
-        <a href="#">record</a>
+        <a href="{{ url_for('record') }}" class="icon_link"><i class="fas fa-tachometer-alt fa-4x"></i></a>
+        <a href="{{ url_for('record') }}" class="name_link">Record</a>
     </article>
     <article class="container">
-        <i class="fas fa-plus fa-4x"></i>
-        <a href="{{ url_for('add') }}">add</a>
+        <a href="{{ url_for('add') }}" class="icon_link"><i class="fas fa-plus fa-4x"></i></a>
+        <a href="{{ url_for('add') }}" class="name_link">Add</a>
     </article>
     <article class="container">
-        <i class="far fa-calendar-alt fa-4x"></i>
-        <a href="{{ url_for('record') }}">record</a>
+        <a href="{{ url_for('record') }}" class="icon_link"><i class="far fa-calendar-alt fa-4x"></i></a>
+        <a href="#" class="name_link">Upcoming</a>
     </article>
     <article class="container">
-        <i class="fas fa-wrench fa-4x"></i>
-        <a href="{{ url_for('add') }}">add</a>
+        <a href="{{ url_for('record') }}" class="icon_link"><i class="fas fa-wrench fa-4x"></i></a>
+        <a href="#" class="name_link">Parts and Products</a>
     </article>
 
 </section>
